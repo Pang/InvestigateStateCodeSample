@@ -37,8 +37,6 @@ public class NpcInvestigateState : NpcBaseState
         {
             yield return wait;
             CheckReachedDestination(state);
-
-            if (state.npc.hostileTarget != null) state.SwitchState(state.chasingState);
         }
     }
 

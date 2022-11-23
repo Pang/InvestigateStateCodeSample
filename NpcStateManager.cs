@@ -98,7 +98,6 @@ public class NpcStateManager : MonoBehaviour
     private void Alerted()
     {
         npc.questionMarkAlert.SetActive(false);
-        npc.questionMarkAlert.transform.position = npc.headPos + new Vector3(0, 1, 0);
         SwitchState(investigateState);
         isAlerted = false;
     }

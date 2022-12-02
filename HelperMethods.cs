@@ -4,8 +4,7 @@ public static class HelperMethods
     {
         // Displace position & check distance to 0,0
         float magnitude = (targetPos - fromPos).magnitude;
-        float distance = Mathf.Sqrt(magnitude);
-        return distance < radius;
+        return magnitude < radius;
     }
 
     public static bool CheckInSight(Vector3 target, Transform tSelf, float radius, float peripheralVisionDegrees)
